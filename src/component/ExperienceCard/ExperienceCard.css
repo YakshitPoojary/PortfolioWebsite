@@ -1,0 +1,31 @@
+.expContainer{
+  counter-reset: line;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.bracket{
+  color: #FF10F0;
+}
+
+.square{
+  color: #f2ff04;
+}
+
+.titles{
+  color: #00FFFF;
+}
+
+.line::before {
+  content: counter(line);
+  counter-increment: line;
+  margin-right: 1rem;
+  color: grey;
+}
+
+@media screen and (max-width: 600px) {
+  .expContainer {
+    font-size: 0.85rem;
+    line-height: 1rem;
+  }
+}

@@ -1,0 +1,57 @@
+.bottomBar {
+  background: #24292e;
+  height: 25px;
+  border-top: 1px solid #1b1f23;
+  color: rgb(225, 228, 232);
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.bottomBar a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  margin-right: 4px;
+  height: 15px;
+  width: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.prettier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+  display: flex;
+  margin-right: 0.5rem;
+  height: 24px;
+  align-items: center;
+  padding: 0 0.2rem;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section:hover {
+  background: #4f4f52;
+}
+
+@media screen and (max-width: 600px) {
+  .bottomBar {
+    font-size: 0.6rem;
+  }
+  .section {
+    margin-right: 0.5rem;
+  }
+}
+  

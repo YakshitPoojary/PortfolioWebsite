@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+
+.main {
+  display: flex;
+  background: #24292e;
+  height: auto;
+}
+
+.layoutContent {
+  padding: 2rem;
+  color: #efefef;
+  font-family: 'JetBrains Mono', monospace;
+  flex: 1;
+  height: 75vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.layoutContent {
+  scrollbar-width: 10px;
+  scrollbar-color: #f9826c;
+}
+
+.layoutContent::-webkit-scrollbar {
+  width: 15px;
+}
+
+.layoutContent::-webkit-scrollbar-track {
+  background: #24292e;
+  border-left: 1px solid #1e1f29;
+}
+
+.layoutContent::-webkit-scrollbar-thumb {
+  background: #333536;
+  border-left: 1px solid #1e1f29;
+}
+
+@media screen and (max-width: 600px) {
+  .layoutContent {
+    padding: 2rem 1rem;
+  }
+}

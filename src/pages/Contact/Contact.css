@@ -1,0 +1,84 @@
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contactContainer > * {
+  flex: 1;
+}
+
+.contactContainer > div:first-child {
+  border-right: 1px solid #f9826c;
+}
+
+.contactContainer h1 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.contactFlex {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  font-family: 'JetBrains Mono';
+  margin-bottom: 1.5rem;
+  background: #1f2428;
+  color: #efefef;
+  border: none;
+  font-size: 1rem;
+  padding: 0.75rem;
+  width: 90%;
+  resize: none;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: 1px solid #f9826c;
+}
+
+.contactForm button {
+  background: #f9826c;
+  color: #24292e;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contactHeading {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .contactContainer {
+    display: block;
+  }
+  .contactContainer > div:first-child {
+    border-right: none;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactFlex {
+    display: block;
+  }
+  .contactForm input {
+    font-size: 0.85rem;
+  }
+}
+  

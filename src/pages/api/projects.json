@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "BookKaro",
+    "image": "https://i.imgur.com/Jcyox01.jpg",
+    "description": "Collaborated in a dynamic team of three to conceptualize and develop a Hotel Booking App. The application seamlessly integrates database management, server-side logic, and a responsive user interface. Personally contributed to the frontend development utilizing React, ensuring an intuitive and visually appealing experience for users.",
+    "tags": ["MongoDB", "Express.js", "React.js", "Node.js"],
+    "source_code": "https://github.com/YakshitPoojary/Booking_App",
+    "demo": "https://bookkaro.vercel.app/"
+  },
+  {
+    "id": 2,
+    "name": "Notedemy",
+    "image": "https://i.imgur.com/IOcyy4v.jpg",
+    "description": "Worked with one other teammate to develop an Online Notes Sharing Website.My primary responsibility lay in backend development, where I ensured robust functionality for note upload, download, and filtering. Our teamwork resulted in a platform that seamlessly connects students and teachers for efficient knowledge exchange.",
+    "tags": ["HTML", "CSS", "Javascript", "PHP"],
+    "source_code":"https://github.com/YakshitPoojary/Notedemy",
+    "demo": "https://notedemy.000webhostapp.com/"
+  },
+  {
+    "id": 3,
+    "name": "VSCode Portfolio",
+    "image": "https://imgur.com/mKkz0iz.png",
+    "description": "A themeable and developer-centric portfolio based on the VSCode",
+    "tags": ["React.js", "CSS"],
+    "source_code": "https://github.com/itsnitinr/vscode-portfolio",
+    "demo": "http://vscode-portfolio.vercel.app/"
+  }
+]

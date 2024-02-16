@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  height: 69vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.homeBackground {
+  font-size: 5rem;
+  font-family: 'Montserrat';
+  line-height: 1;
+  color: rgba(56, 58, 61, 0.35);
+  position: absolute;
+  z-index: 1;
+}
+
+.homeForeground {
+  z-index: 2;
+  display: flex;
+  color: #f9826c;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.homeName {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 0rem;
+}
+
+.homeBio {
+  width: max-content;
+  color: #65974f;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.homeBio::before,
+.homeBio::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.homeBio::before {
+  background: #24292e;
+  animation: typewriter 2.5s steps(24) 500ms forwards;
+}
+
+.homeBio::after {
+  margin-left: 0.4rem;
+  width: 0.125em;
+  background: white;
+  animation: typewriter 2.5s steps(24) 500ms forwards,
+    blink 900ms steps(24) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.homeButton {
+  background: #00FFFF;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1.5rem;
+  color: black;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.homeOutlined {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  color: #eee;
+  border: 2px solid #00FFFF;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.homeButton:hover,
+.homeOutlined:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.homeIllustration {
+  height: 550px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+/* 4K Screens */
+@media screen and (min-width: 2000px) {
+  .homeBackground {
+    font-size: 8.5rem;
+  }
+  .homeContent {
+    padding: 0 3rem;
+  }
+  .homeName {
+    font-size: 6rem;
+  }
+  .homeBio {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .homeButton {
+    font-size: 2rem;
+  }
+  .homeOutlined {
+    font-size: 2rem;
+  }
+  .homeIllustration {
+    height: 900px;
+    width: 700px;
+  }
+}
+
+/* iPad Pro */
+@media screen and (max-width: 1100px) {
+  .homeBackground {
+    display: none;
+  }
+  .homeContainer {
+    display: block;
+  }
+  .homeForeground {
+    margin: 4rem 0;
+    display: block;
+    text-align: center;
+  }
+  .homeName {
+    font-size: 4rem;
+  }
+  .homeBio {
+    font-size: 1.75rem;
+    margin: 0.75rem auto 3rem;
+  }
+  .homeIllustration {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    height: 700px;
+    width: 600px;
+  }
+}
+
+/* iPad */
+@media screen and (max-width: 900px) {
+  .homeForeground {
+    margin: 2rem 0;
+  }
+  .homeName {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .homeBio {
+    font-size: 1.5rem;
+  }
+  .homeIllustration {
+    height: 550px;
+    width: 420px;
+    bottom: -50px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1050px) {
+  .homeContainer {
+    display: flex;
+  }
+  .homeIllustration {
+    display: none;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 600px) {
+  .homeForeground {
+    margin: 0;
+  }
+  .homeName {
+    font-size: 2rem;
+  }
+  .homeBio {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .homeButton {
+    font-size: 1rem;
+  }
+  .homeOutlined {
+    font-size: 1rem;
+  }
+  .homeIllustration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 75vw;
+    height: 50vh;
+    z-index: 1;
+  }
+}
