@@ -4,7 +4,7 @@ import './ContactLinks.css';
 const contactItems = [
   {
     social: 'website',
-    link: 'https://yakshit-poojary.vercel.app/',
+    link: 'yakshit-poojary.vercel.app',
     href: 'https://yakshit-poojary.vercel.app/',
   },
   {

@@ -1,0 +1,22 @@
+.webIcons, .languageIcons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skillsImage{
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.skillsImage:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}

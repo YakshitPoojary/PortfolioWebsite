@@ -35,6 +35,11 @@ const explorerItems = [
       path: '/experience',
       icon: jsonIcon,
     },
+    {
+      name: 'skills.md',
+      path: '/skills',
+      icon: markdownIcon,
+    },
 ];
 
 const Explorer = () => {

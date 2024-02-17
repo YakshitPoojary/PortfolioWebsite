@@ -6,6 +6,7 @@ import htmlIcon from '../../assets/html_icon.svg';
 import cssIcon from '../../assets/css_icon.svg';
 import jsIcon from '../../assets/js_icon.svg';
 import jsonIcon from '../../assets/json_icon.svg';
+import markdownIcon from '../../assets/markdown_icon.svg';
 import { Link } from 'react-router-dom';
 
 const Tabsbar = () => {
@@ -61,6 +62,16 @@ const Tabsbar = () => {
       >
         <img src={jsonIcon} alt='experience.json' height={18} width={18} />
         <p>experience.json</p>
+      </NavLink>
+
+      <NavLink
+        to='/skills'
+        className={`tab ${
+          location.pathname === '/skills' ? 'tabActive' : ''
+        }`}
+      >
+        <img src={markdownIcon} alt='skills.md' height={18} width={18} />
+        <p>skills.md</p>
       </NavLink>
     </div>
   );

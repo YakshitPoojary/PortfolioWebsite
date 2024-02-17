@@ -12,6 +12,7 @@ import Contact from '../../pages/Contact/Contact.jsx';
 import Project from '../../pages/Projects/Project.jsx';
 import About from '../../pages/About/About.jsx';
 import Experience from '../../pages/Experience/Experience.jsx';
+import Skills from '../../pages/Skills/Skills.jsx';
 
 
 const Layout = () => {
@@ -31,6 +32,7 @@ const Layout = () => {
                 <Route path='/about' element={<About/>}/>
                 <Route path='/projects' element={<Project/>}/>
                 <Route path='/experience' element={<Experience/>}/>
+                <Route path='/skills' element={<Skills/>}/>
               </Routes>
             </div>
           </div>
