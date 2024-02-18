@@ -21,9 +21,9 @@
     "id": 3,
     "name": "VSCode Portfolio",
     "image": "https://imgur.com/mKkz0iz.png",
-    "description": "A themeable and developer-centric portfolio based on the VSCode",
+    "description": "Crafted using React.js and CSS, this portfolio website draws inspiration from the sleek design of VSCode.",
     "tags": ["React.js", "CSS"],
-    "source_code": "https://github.com/itsnitinr/vscode-portfolio",
-    "demo": "http://vscode-portfolio.vercel.app/"
+    "source_code": "https://github.com/YakshitPoojary/PortfolioWebsite",
+    "demo": "https://yakshit-poojary.vercel.app/"
   }
 ]

@@ -1,0 +1,17 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutInfo{
+    text-align: center;
+}
+
+.resume{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.resume:hover{
+    cursor: pointer;
+}
