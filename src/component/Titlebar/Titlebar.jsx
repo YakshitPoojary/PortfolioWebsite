@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Titlebar.css';
 import vscode_icon from '../../assets/vscode_icon.svg';
+import { VscChromeClose } from "react-icons/vsc";
+import { VscChromeMaximize } from "react-icons/vsc";
+import { VscChromeMinimize } from "react-icons/vsc";
 
+const Titlebar = ({handleMaximize, handleMinimize, handleClose}) => {
 
-const Titlebar = () => {
   return (
     <section className='titlebar'>
         <img src={vscode_icon} alt="VSCode Icon" height={15} width={15} className='titlebarIcon'/>
@@ -18,9 +21,9 @@ const Titlebar = () => {
         </div>
         <p className="tilebarTitle">Yakshit Poojary - Visual Studio Code</p>
         <div className="windowButtons">
-            <span className="minimize"></span>
-            <span className="maximize"></span>
-            <span className="close"></span>
+            <VscChromeMinimize  size={30} className='minimize' onClick={handleMinimize}/>
+            <VscChromeMaximize size={30} className='maximize' onClick={handleMaximize}/>
+            <VscChromeClose  size={30} className='close' onClick={handleClose}/>
         </div>
     </section>
   )

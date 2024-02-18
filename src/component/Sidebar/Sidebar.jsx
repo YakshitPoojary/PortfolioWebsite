@@ -39,7 +39,7 @@ const sidebarBottomItems = [
   },
   {
     Icon: SettingsIcon,
-    path: '/settings',
+    path: '/skills',
   },
 ];
 

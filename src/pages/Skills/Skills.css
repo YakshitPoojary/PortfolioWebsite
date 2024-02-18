@@ -9,14 +9,39 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 40px;
 }
 
 .skillsImage{
     padding: 30px;
-    margin-top: 20px;
+    margin: 10px;
+    transition: transform 0.5s;
 }
 
 .skillsImage:hover{
-    background-color: aliceblue;
+    background-color: #88ffff;
+    border-radius: 100px;
     cursor: pointer;
+    color: black;
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.iconText {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.8s; 
+}
+
+.iconWithText{
+    cursor: pointer;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconWithText:hover .iconText{
+  opacity: 1; 
+  transform: translateY(-20px);
 }

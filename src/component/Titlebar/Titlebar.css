@@ -1,7 +1,7 @@
 .titlebar {
   background: #1e1f29;
   height: 30px;
-  padding: 0 0.5rem;
+  padding: 0 0.3rem 0 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,22 +37,19 @@
 
 .windowButtons * {
   margin-left: 0.5rem;
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
+  height: 20px;
+  width: 20px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
+
 .minimize {
-  background: #f1fa8c;
   margin-left: auto;
 }
 
-.maximize {
-  background: #50fa7b;
-}
-
-.close {
+.close:hover {
   background: #ff5555;
 }
 

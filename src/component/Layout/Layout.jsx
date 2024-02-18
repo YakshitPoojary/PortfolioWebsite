@@ -5,7 +5,7 @@ import BottomBar from '../BottomBar/BottomBar';
 import Explorer from '../Explorer/Explorer';
 import Tabsbar from '../Tabsbar/Tabsbar';
 import './Layout.css';
-// import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '../../pages/Home/Home.jsx';
 import Contact from '../../pages/Contact/Contact.jsx';
@@ -16,10 +16,35 @@ import Skills from '../../pages/Skills/Skills.jsx';
 
 
 const Layout = () => {
+    
+    const location = useLocation();
+
+    const handleMaximize = () => {
+      const element = document.getElementById("layoutContainer");
+      const isFullScreen = document.fullscreenElement;
+      if(!isFullScreen){
+        element.requestFullscreen();
+      }
+    };
+
+    const handleMinimize = () => {
+      const isFullScreen = document.fullscreenElement;
+      if(isFullScreen){
+        document.exitFullscreen();
+      }
+    };
+
+    const handleClose = () => {
+      if (window.confirm("Are you sure you want to close this window?")) {
+          window.location.href = "https://www.google.com";
+      }
+  };
+  
+  
 
     return (
-      <>
-        <Titlebar />
+      <div id='layoutContainer'>
+        <Titlebar handleMaximize={handleMaximize} handleMinimize={handleMinimize} handleClose={handleClose}/>
         <div className='main'>
           <Sidebar />
           <Explorer />
@@ -38,7 +63,7 @@ const Layout = () => {
           </div>
         </div>
         <BottomBar/>
-      </>
+      </div>
     )
 }
 

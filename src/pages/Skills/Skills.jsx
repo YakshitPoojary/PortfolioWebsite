@@ -10,35 +10,80 @@ import React from 'react';
 // import php from '../../assets/icons/php.png';
 // import c from '../../assets/icons/c.png';
 
-import { DiHtml5, DiCss3, DiJava, DiPython, DiJavascript1, DiReact, DiDatabase, DiPhp, DiCode, DiJqueryLogo  } from "react-icons/di";
+import { DiHtml5, DiCss3, DiJava, DiPython, DiJavascript1, DiReact, DiDatabase, DiPhp, DiJqueryLogo  } from "react-icons/di";
 import { BsCCircle } from "react-icons/bs";
 import { SiCplusplus } from "react-icons/si";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import './Skills.css';
 
-
-
-
 const Skills = () => {
   return (
     <div className='skillsContainer'>
-        <div className='webIcons'>
-            <DiHtml5 className='skillsImage' size={80} />
-            <DiCss3 className='skillsImage' size={80} />
-            <DiJavascript1 className='skillsImage' size={80} />
-            <DiReact className='skillsImage' size={80} />
-            <DiPhp className='skillsImage' size={80} />
-            <DiJqueryLogo className='skillsImage' size={80} />
-            <DiDatabase className='skillsImage' size={80} />
-        </div>
+        <p className='webIcons'>
+            <div className="iconWithText">
+              <DiHtml5 className='skillsImage' size={80} />
+              <span className="iconText">HTML</span>
+            </div>
 
-        <div className="languageIcons">
+            <div className="iconWithText">
+              <DiCss3 className='skillsImage' size={80} />
+              <span className='iconText'>CSS</span>
+            </div>
+            
+            <div className="iconWithText">
+              <DiJavascript1 className='skillsImage' size={80} />
+              <span className='iconText'>Javascript</span>      
+            </div>
+
+            <div className="iconWithText">
+              <DiReact className='skillsImage' size={80} />
+              <span className='iconText'>React.js</span>
+            </div>
+
+            <div className="iconWithText">
+              <DiPhp className='skillsImage' size={80} />
+              <span className='iconText'>PHP</span>
+            </div>
+
+            <div className="iconWithText">
+              <DiJqueryLogo className='skillsImage' size={80} />
+              <span className='iconText'>jQuery</span>
+            </div>
+
+            <div className="iconWithText">
+              <DiDatabase className='skillsImage' size={80} />
+              <span className='iconText'>SQL</span>
+            </div>
+        </p>
+
+        <p className="languageIcons">
+
+          <div className="iconWithText">
             <DiJava className='skillsImage' size={80} />
+            <span className='iconText'>Java</span>
+          </div>
+          
+          <div className="iconWithText">
             <DiPython className='skillsImage' size={80} />
+            <span className='iconText'>Python</span>
+          </div>
+
+          <div className="iconWithText">
             <BsCCircle className='skillsImage' size={80}/>
+            <span className='iconText'>C</span>
+          </div>
+
+          <div className="iconWithText">
             <SiCplusplus className='skillsImage' size={80}/>
+            <span className='iconText'>C++</span>
+          </div>
+
+          <div className="iconWithText">
             <BiLogoSpringBoot className='skillsImage' size={80}/>
-        </div>
+            <span className='iconText'>Spring Boot</span>
+          </div>
+
+        </p>
     </div>
   );
 };
