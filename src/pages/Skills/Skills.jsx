@@ -11,9 +11,11 @@ import React from 'react';
 // import c from '../../assets/icons/c.png';
 
 import { DiHtml5, DiCss3, DiJava, DiPython, DiJavascript1, DiReact, DiDatabase, DiPhp, DiJqueryLogo  } from "react-icons/di";
+import { DiDjango } from "react-icons/di";
 import { BsCCircle } from "react-icons/bs";
 import { SiCplusplus } from "react-icons/si";
 import { BiLogoSpringBoot } from "react-icons/bi";
+import { FaNodeJs } from "react-icons/fa";
 import './Skills.css';
 
 const Skills = () => {
@@ -53,6 +55,16 @@ const Skills = () => {
             <div className="iconWithText">
               <DiDatabase className='skillsImage' size={80} />
               <span className='iconText'>SQL</span>
+            </div>
+
+            <div className="iconWithText">
+              <DiDjango className='skillsImage' size={80} />
+              <span className='iconText'>Django</span>
+            </div>
+
+            <div className="iconWithText">
+              <FaNodeJs className='skillsImage' size={80} />
+              <span className='iconText'>Node.js</span>
             </div>
         </p>
 

@@ -54,10 +54,10 @@
 }
 
 @media screen and (max-width: 900px) {
-  .tilebarItems p {
+  .tilebarItems{
     display: none;
   }
   .tilebarTitle {
-    flex: 4;
+    flex: 1;
   }
 }

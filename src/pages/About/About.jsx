@@ -15,7 +15,7 @@ const About = () => {
 
       <div className='aboutInfo'>
         <h1>EDUCATION</h1>
-        <div>B.Tech Computer Engineering</div>
+        <div>Bachelor of Technology in Computer Engineering</div>
         <div>Honours in Cyber Security</div>
         <p>Total CGPA (till Semester 5): 8.51</p>
       </div>
